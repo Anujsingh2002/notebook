@@ -9,7 +9,7 @@ const Signup = (props) => {
         e.preventDefault();
         const {name,email,password}=credentials;
          //server side
-         const response = await fetch(`https://notebook-backend-23fi.onrender.com/api/auth/createuser`, {
+         const response = await fetch(`https://notebook-backend-994b.onrender.com/api/auth/createuser`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
