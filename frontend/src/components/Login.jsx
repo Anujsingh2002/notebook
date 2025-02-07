@@ -17,7 +17,7 @@ const Login = (props) => {
             body: JSON.stringify({email:credentials.email,password:credentials.password})
         });
         const jsn = await response.json();
-        console.log(jsn)
+        // console.log(jsn)
         if(jsn.success){
             //save authtoken to localstorage and redirect to homepage
             localStorage.setItem('token',jsn.authToken);
